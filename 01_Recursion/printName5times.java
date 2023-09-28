@@ -1,13 +1,11 @@
 public class printName5times{
-    static int count=0;
-    static void printName(String name,int times){
-        if(count>times)
+    static void printName(int start,int times){
+        if(start>times)
         return;
-        System.out.println(name+" "+count);
-        count++;
-        printName(name,times);
+        System.out.println("Aayush"+" "+start);
+        printName(start+1,times);
     }
     public static void main(String[] args) {
-        printName("Aayush",10);
+        printName(1,5);
     }
 }
