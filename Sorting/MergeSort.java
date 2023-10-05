@@ -5,7 +5,7 @@
         int right=mid+1;
         int j=0; 
         while(left<=mid && right<=high){
-            if(arr[left]<arr[right]){
+            if(arr[left]<=arr[right]){
                 temp[j]=arr[left];
                 left++;
                  
@@ -47,12 +47,12 @@
 
     static void printArray(int[] arr){
         for(int i=0;i<arr.length;i++){
-            System.out.println(arr[i]);
+            System.out.print(arr[i]+" ");
         }
      }
     
     public static void main(String[] args) {
-        int[] arr={5,6,3,4,1,0};
+        int[] arr={3,-5,2,0,1,4,6};
         merge_sort(arr, 0, arr.length-1);
         printArray(arr);
     }
