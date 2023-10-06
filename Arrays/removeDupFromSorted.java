@@ -3,11 +3,11 @@ package Arrays;
 public class removeDupFromSorted {
 
     static int[] remove(int[] arr, int n) {
-        int ptr1 = 0;
-        int count =1;
-        for (int i = 0; i < n - 1; i++) {
-            if (arr[ptr1] != arr[i]) {
-                arr[++ptr1] = arr[i];
+        int i = 0;
+        int count = 1;
+        for (int j = 1; j < n; j++) {
+            if (arr[i] != arr[j]) {
+                arr[++i] = arr[j];
                 count++;
             }
         }
