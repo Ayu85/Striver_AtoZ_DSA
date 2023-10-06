@@ -9,7 +9,7 @@ public class checkIfSorted {
             return true;
         }
         public static void main(String[] args){
-            int[]arr={2,3,5};
+            int[]arr={2,3,-1,5};
             System.out.println(checkSorted(arr, arr.length));
         }
 
