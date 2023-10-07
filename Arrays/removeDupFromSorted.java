@@ -9,6 +9,8 @@ public class removeDupFromSorted {
             if (arr[i] != arr[j]) {
                 arr[++i] = arr[j];
                 count++;
+
+                
             }
         }
         System.out.println(count);
