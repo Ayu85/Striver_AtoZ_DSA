@@ -2,24 +2,34 @@ package Arrays;
 
 import java.util.ArrayList;
 
-public class intersection_TwoPointerApproach {
-    static ArrayList<Integer> getINtersection(int[] a, int[] b, int n1, int n2) {
+class intersection_TwoPointerApproach {
+    public static int[] intersect(int[] nums1, int[] nums2) {
         ArrayList<Integer> temp = new ArrayList<>();
         int j = 0;
-        for (int i = 0; i < n1; i++) {
-            if (a[i] == b[j]) {
-                temp.add(a[i]);
+        int i = 0;
+        while (i < nums1.length && j < nums2.length) {
+            if (nums1[i] == nums2[j]) {
+                temp.add(nums1[i]);
+                i++;
                 j++;
-            }
+            } else
+                i++;
         }
-        return temp;
+        int[] arr = new int[temp.size()];
+        int k = 0;
+        for (int x : temp) {
+            arr[k] = x;
+            k++;
+        }
+        return arr;
+
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 2, 3, 3, 4, 5, 6 };
-        int[] arr2 = { 2, 3, 3, 5, 6, 6, 7 };
-        ArrayList<Integer> result = getINtersection(arr, arr2, arr.length, arr2.length);
-        for (int x : result)
+        int[] arr = { 1, 2, 2, 1 };
+        int[] arr2 = { 2, 2, 3, 3, 4 };
+        int[] res = intersect(arr, arr2);
+        for (int x : res)
             System.out.print(x + " ");
     }
 }
