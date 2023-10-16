@@ -2,7 +2,7 @@ package Arrays;
 
 public class longestSubarraySumRqualsK {
     static void getSubArray(int[] arr, int n, int x) {
-        int max = -1;
+        int max = Integer.MIN_VALUE;
         for (int i = 0; i < n; i++) {
             int sum = 0;
             int Length = 0;
@@ -10,9 +10,8 @@ public class longestSubarraySumRqualsK {
                 sum += arr[j];
                 Length++;
             }
-            if (sum == x) {
-                if (Length > max)
-                    max = Length;
+            if (sum == x && Length > max) {
+                max = Length;
             }
 
         }
@@ -20,7 +19,7 @@ public class longestSubarraySumRqualsK {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1,2,1,2,1};
-        getSubArray(arr, arr.length, 3);
+        int[] arr = { 1, 1,1 };
+        getSubArray(arr, arr.length, 2);
     }
 }
