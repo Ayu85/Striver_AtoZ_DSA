@@ -23,7 +23,8 @@ public class twoSum {
     public static void main(String[] args) {
         int[] arr = { 2, 6, 5, 8, 11 };
         // System.out.println(twoSumFunc(arr, arr.length, 1));
-        int[] response = twoSumFunc(arr, arr.length, 8);
+        int[] response = twoSumFunc(arr, arr.length, 16
+        );
         for (int x : response)
             System.out.println(x);
     }
