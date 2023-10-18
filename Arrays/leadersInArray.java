@@ -21,9 +21,9 @@ public class leadersInArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 10, 22, 12, 3, 0, 6,8 };
+        int[] arr = { 10, 22, 12, 3, 0, 6, 8 };
         ArrayList<Integer> res = getLeaders(arr, arr.length);
-        System.out.println("leaders in the goi");
+        System.out.println("leaders in the given array is: ");
         for (int x : res)
             System.out.print(x + " ");
     }
