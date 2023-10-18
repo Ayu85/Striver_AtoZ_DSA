@@ -5,13 +5,13 @@ public class rearrangeBySign {
         int[] temp = new int[n];
         int x = 0;
         int y = 1;
-        for (int i = 0; i < n; i++) {
-            if (arr[i] > 0) {
-                temp[x] = arr[i];
+        for (int i:arr) {
+            if (i > 0) {
+                temp[x] = i;
                 x += 2;
             } else {
-                temp[y] = arr[i];
-                y += 2;
+                temp[y] = i;
+                y+=2;
             }
         }
         for (int i = 0; i < n; i++) {
@@ -20,7 +20,7 @@ public class rearrangeBySign {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 3, 1, -2, -5, 2, -4 };
+        int[] arr = { -3, 1, -2, -5, 2, 4 };
         System.out.println("Before Rearrangement of Array: ");
         for (int x : arr)
             System.out.print(x + " ");
