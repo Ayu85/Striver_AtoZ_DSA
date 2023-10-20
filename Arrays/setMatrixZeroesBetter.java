@@ -33,7 +33,7 @@ public class setMatrixZeroesBetter {
         }
     }
     public static void main(String[] args) {
-        int[][] arr={{1,1,1,1},{1,0,1,1},{1,1,0,1},{1,0,0,1}};
+        int[][] arr={{1,1,1,1},{1,0,1,1},{1,1,1,1},{1,0,0,1}};
         System.out.println("Before marking zeroes: ");
         printMatrix(arr, 4, 4);
         interration1(arr, 4, 4);
