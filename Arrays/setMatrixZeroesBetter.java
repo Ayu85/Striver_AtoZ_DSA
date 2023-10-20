@@ -15,8 +15,8 @@ public class setMatrixZeroesBetter {
         // itertaion 2
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                if (arr[i][j] != 0) {
-                    if (rowMarker[i] == 1 || colMarker[j] == 1) {
+                if (arr[i][j] != 0 && rowMarker[i] == 1 || colMarker[j] == 1) {
+                    {
                         arr[i][j] = 0;
                     }
                 }
@@ -32,8 +32,9 @@ public class setMatrixZeroesBetter {
             System.out.println();
         }
     }
+
     public static void main(String[] args) {
-        int[][] arr={{1,1,1,1},{1,0,1,1},{1,1,1,1},{1,0,0,1}};
+        int[][] arr = { { 1, 1, 1, 1 }, { 1, 0, 1, 1 }, { 1, 1, 1, 1 }, { 1, 0, 0, 1 } };
         System.out.println("Before marking zeroes: ");
         printMatrix(arr, 4, 4);
         interration1(arr, 4, 4);
