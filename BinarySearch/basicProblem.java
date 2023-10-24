@@ -7,14 +7,16 @@ public class basicProblem {
             if (arr[mid] == target)
                 return mid;
             else if (target < arr[mid]) {
-                end = mid - 1;
+                end = mid  ;
             } else
-                start = mid + 1;
+                start = mid +1;
         }
         return -1;
 
     }
+
     public static void main(String[] args) {
-        
+        int[] arr = { 2, 4, 8, 9, 10, 12, 16 };
+        System.out.println(searchItem(arr, arr.length,8));
     }
 }
