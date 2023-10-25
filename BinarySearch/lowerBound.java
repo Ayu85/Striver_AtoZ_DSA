@@ -8,8 +8,8 @@ public class lowerBound {
 
     }
 
-public static void main(String[] args) {
-    int[] arr={3,4,8,15,19};
-    System.out.println(getaLowerBound(arr, arr.length, 15));
-}
+    public static void main(String[] args) {
+        int[] arr = { 3, 4, 8, 15, 19, 19, 19 };
+        System.out.println("lower bound: " + getaLowerBound(arr, arr.length, 17));
+    }
 }
