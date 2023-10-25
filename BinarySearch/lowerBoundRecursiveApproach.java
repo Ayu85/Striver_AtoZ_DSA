@@ -1,4 +1,4 @@
-public class lowerBoundBetterApproach {
+public class lowerBoundRecursiveApproach {
     static int getLower(int[] arr, int low, int high, int target) {
         int ans = high + 1;
         if (low > high)
