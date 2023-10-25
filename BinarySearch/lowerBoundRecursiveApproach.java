@@ -14,6 +14,6 @@ public class lowerBoundRecursiveApproach {
 
     public static void main(String[] args) {
         int[] arr = {2,4,6,9,10 };
-        System.out.println(getLower(arr, 0, arr.length - 1, 9));
+        System.out.println(getLower(arr, 0, arr.length - 1, 10));
     }
 }
