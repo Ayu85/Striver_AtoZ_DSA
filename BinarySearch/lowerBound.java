@@ -4,12 +4,12 @@ public class lowerBound {
             if (arr[i] >= x)
                 return i;
         }
-        return 0;
+        return len;
 
     }
 
     public static void main(String[] args) {
-        int[] arr = { 3, 4, 8, 15, 19, 19, 19 };
-        System.out.println("lower bound: " + getaLowerBound(arr, arr.length, 17));
+        int[] arr = { 3, 5, 8, 15, 19, 19, 19 };
+        System.out.println("lower bound: " + getaLowerBound(arr, arr.length, 3));
     }
 }
