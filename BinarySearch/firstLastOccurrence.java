@@ -4,11 +4,9 @@ public class firstLastOccurrence {
         int last = -1;
         for (int i = 0; i < n; i++) {
             if (arr[i] == x) {
-                if (first == -1) {
+                if (first == -1)
                     first = i;
-                    last = i;
-
-                } else
+                else
                     last = i;
             }
         }
@@ -19,6 +17,6 @@ public class firstLastOccurrence {
         int[] arr = { 2, 4, 5, 8, 8, 8, 9, 10 };
         int res[] = getOccurrances(arr, arr.length, 8);
         for (int x : res)
-            System.out.print(x+"   ");
+            System.out.print(x + "   ");
     }
 }
