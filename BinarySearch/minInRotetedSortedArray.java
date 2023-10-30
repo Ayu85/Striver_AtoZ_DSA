@@ -24,6 +24,6 @@ public class minInRotetedSortedArray {
     public static void main(String[] args) {
         int[] arr = { 6, 7, 8, 0, 1, 2, 3, 4, 5 };
         int[] arr2 = { 4, 5, 1, 2, 3 };
-        System.out.println(getMin(arr2, arr2.length));
+        System.out.println(getMin(arr, arr.length));
     }
 }
