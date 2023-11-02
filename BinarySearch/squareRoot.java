@@ -10,6 +10,6 @@ public class squareRoot {
     }
 
     public static void main(String[] args) {
-        System.out.println(getRoot(28));
+        System.out.println(getRoot(121));
     }
 }
