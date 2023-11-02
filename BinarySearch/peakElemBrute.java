@@ -11,6 +11,6 @@ public static void main(String[] args) {
     int [] arr2={1,2,1,3,5,6,4};
     int[] arr3={1,2,3,4,5};
     int[] arr4={5,4,2,3,1};
-    System.out.println(getElm(arr3,arr3.length));
+    System.out.println(getElm(arr4,arr4.length));
 }
 }
