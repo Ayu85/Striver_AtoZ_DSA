@@ -16,6 +16,6 @@ public class nthRootOptimal {
     }
 
     public static void main(String[] args) {
-        System.out.println(getRoot(4, 256));
+        System.out.println(getRoot(4, 625));
     }
 }
