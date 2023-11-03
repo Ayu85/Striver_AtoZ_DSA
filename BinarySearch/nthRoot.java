@@ -7,6 +7,6 @@ public class nthRoot {
         return -1;
     }
     public static void main(String[] args) {
-        System.out.println(getRoot(3,27));
+        System.out.println(getRoot(4,69));
     }
 }
