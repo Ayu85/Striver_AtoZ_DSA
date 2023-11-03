@@ -1,7 +1,7 @@
 public class nthRootOptimal {
     static int getRoot(int n, int m) {
-        int low = 0;
-        int high = m - 1;
+        int low = 1;
+        int high = m ;
         while (low <= high) {
 
             int mid = (low + high) / 2;
