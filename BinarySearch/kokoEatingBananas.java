@@ -1,10 +1,10 @@
 public class kokoEatingBananas {
     static int getHours(int[] piles, int h, int n) {
         for (int i = 1; i <= h; i++) {
-            float ans = 0;
-            float hours = i;
+            int ans = 0;
+            int hours = i;
             for (int j = 0; j < n; j++) {
-                ans += Math.ceil(piles[j] / hours);
+                ans += Math.ceil((double) piles[j] / (double) hours);
                 if (ans > h)
                     break;
             }
