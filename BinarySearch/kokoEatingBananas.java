@@ -5,9 +5,7 @@ public class kokoEatingBananas {
             float hours = i;
             for (int j = 0; j < n; j++) {
                 ans += Math.ceil(piles[j] / hours);
-                System.out.print((piles[j] / hours)+" ");
             }
-            System.out.println();
             if (ans == h)
                 return i;
         }
