@@ -5,6 +5,8 @@ public class kokoEatingBananas {
             float hours = i;
             for (int j = 0; j < n; j++) {
                 ans += Math.ceil(piles[j] / hours);
+                if (ans > h)
+                    break;
             }
             if (ans == h)
                 return i;
